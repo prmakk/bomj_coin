@@ -62,6 +62,10 @@ const HomePage: FC<IHomeProps> = ({balance, setBalance, clickValue, totalClicked
             {position.x && position.y && isCanvasShowed ? <CanvasClick x={position.x} y={position.y} click={clickValue} /> : null}
 
             <div className="home__nav">
+                <Link to='/secret'>
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/anonymous-mask.png" alt="anonymous-mask"/>
+                    <p>Секрет</p>
+                </Link>
                 <Link to='/earn'>
                     <img width="40" height="40" src="https://img.icons8.com/officel/40/cheap-2.png" alt="cheap-2"/>
                     <p>Подгоны</p>
